@@ -15,7 +15,7 @@
                     <?php
                     $slide = new WP_Query(array(
                         'post_type' => 'any',
-                        'category_name' => 'slide-carousel',
+                        'cat' => 8,
                         'posts_per_page' =>2,
                     ));
 
@@ -84,7 +84,7 @@
                 <?php $blog_post = new WP_Query( array(
                     'post_type' => 'any',
                     'posts_per_page' => 1,
-                    'category_name' => 'home-blog',
+                    'cat' => 39,
                 ) ); ?>
                 <div class="content-wrapper">
                     <div class="wrap">
@@ -105,7 +105,7 @@
             <?php $announcement_post = new WP_Query( array(
                 'post_type' => 'any',
                 'posts_per_page' => 2,
-                'category_name' => 'announcement',
+                'cat' => 9,
             ) ); 
      
             if(have_posts()) : 
