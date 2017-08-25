@@ -15,7 +15,7 @@
                     <?php
                     $slide = new WP_Query(array(
                         'post_type' => 'any',
-                        'cat' => 8,
+                        'cat' => 4,
                         'posts_per_page' =>2,
                     ));
 
@@ -29,13 +29,6 @@
                             <div class="innerWrap">
                                 <h2><?php the_title(); ?></h2> 
                                 <?php the_excerpt(); ?>
-                                <?php if( get_field('video_link') ) : ?>
-                                    <div class="video-pop">
-                                        <a class="popup-youtube" href="<?php the_field('video_link'); ?>">
-                                            <img src="<?php bloginfo('template_directory') ?>/images/playbtn.png" alt="play">
-                                        </a>
-                                    </div>
-                                <?php endif; ?>
                             </div>
                         </div>
                     </div> <!-- .home-slide-container -->
@@ -84,7 +77,7 @@
                 <?php $blog_post = new WP_Query( array(
                     'post_type' => 'any',
                     'posts_per_page' => 1,
-                    'cat' => 39,
+                    'cat' => 659,
                 ) ); ?>
                 <div class="content-wrapper">
                     <div class="wrap">
@@ -105,7 +98,7 @@
             <?php $announcement_post = new WP_Query( array(
                 'post_type' => 'any',
                 'posts_per_page' => 2,
-                'cat' => 9,
+                'cat' => 2,
             ) ); 
      
             if(have_posts()) : 

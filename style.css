@@ -2135,15 +2135,6 @@ nav ul {
       font-size: 1em;
       line-height: 1.17812em; 
     }
-    .home .home-slide .home-slide-container .video-pop {
-        margin-top: 20px;
-    }
-    .home .home-slide .home-slide-container .video-pop a {
-    border: 0;
-    width: 80px; }
-    .home .home-slide .home-slide-container .video-pop a img {
-      -webkit-filter: drop-shadow(0 0 3px black);
-      filter: drop-shadow(0 0 3px black); }
   @media (min-width: 360px) {
     .home .home-slide .home-slide-container .home-slide-content {
       -moz-transform: translate(-50%, -50%);
