@@ -29,13 +29,6 @@
                             <div class="innerWrap">
                                 <h2><?php the_title(); ?></h2> 
                                 <?php the_excerpt(); ?>
-                                <?php if( get_field('video_link') ) : ?>
-                                    <div class="video-pop">
-                                        <a class="popup-youtube" href="<?php the_field('video_link'); ?>">
-                                            <img src="<?php bloginfo('template_directory') ?>/images/playbtn.png" alt="play">
-                                        </a>
-                                    </div>
-                                <?php endif; ?>
                             </div>
                         </div>
                     </div> <!-- .home-slide-container -->
